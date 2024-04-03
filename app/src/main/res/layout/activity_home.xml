@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Include the provided paragraph -->
+
+    <TextView
+        android:id="@+id/idTVParagraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bhilai Institute Of Technology, Durg, with a mission to provide world class technical manpower to serve the industry, profession and society and to contribute effectively to the national economic development, has acquired the status of one of the premier technological institutions of India. It has a rich tradition of pursuing academic excellence, value based education and providing the conducive environment for overall personality development of students. The academic programmes offered are vigorous and continuously being updated to keep pace with modern developments and innovations in associated disciplines.
+   "    android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Textview for displaying user's email address -->
+
+    <TextView
+        android:id="@+id/idTVWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@id/idTVParagraph"/>
+
+    <!-- Button for logging out of the app -->
+
+    <Button
+        android:id="@+id/idBtnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVWelcome"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/logout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/idBtnLogout"
+        android:src="@drawable/bit"/>
+
+
+</RelativeLayout>
